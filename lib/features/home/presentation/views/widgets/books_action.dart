@@ -1,4 +1,6 @@
+import 'package:bookly_app/core/utils/functions/launch_url.dart';
 import 'package:bookly_app/core/widgets/custom_button.dart';
+import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 
 class BooksAction extends StatelessWidget {
@@ -25,7 +27,7 @@ class BooksAction extends StatelessWidget {
           Expanded(
             child: CustomButton(
               onPressed: () {
-                launchCustomUr(context, 'bookModel.volumeInfo.previewLink');
+                launchCustomUrl(context, bookModel.volumeInfo!.previewLink!);
               },
               fontSize: 16,
               text: getText(bookModel),
@@ -43,7 +45,7 @@ class BooksAction extends StatelessWidget {
   }
 
   String getText(BookModel bookModel) {
-    if (bookModel.volumeInfo.previewLink == null) {
+    if (bookModel.volumeInfo!.previewLink == null) {
       return 'Not Avaliable';
     } else {
       return 'Preview';
