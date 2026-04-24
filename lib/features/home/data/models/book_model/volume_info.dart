@@ -44,6 +44,8 @@ class VolumeInfo extends Equatable {
     this.previewLink,
     this.infoLink,
     this.canonicalVolumeLink,
+    this.averageRating,
+    this.ratingsCount,
   });
 
   factory VolumeInfo.fromJson(Map<String, dynamic> json) => VolumeInfo(
