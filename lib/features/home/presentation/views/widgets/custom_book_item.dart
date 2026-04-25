@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-class FeaturedListViewItem extends StatelessWidget {
-  const FeaturedListViewItem({super.key, required this.imageUrl});
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key, required this.imageUrl});
 
   final String imageUrl;
   @override
