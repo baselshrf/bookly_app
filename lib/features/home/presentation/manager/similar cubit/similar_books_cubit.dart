@@ -6,7 +6,7 @@ import 'package:equatable/equatable.dart';
 part 'similar_books_state.dart';
 
 class SimilarBooksCubit extends Cubit<SimilarBooksState> {
-  SimilarBooksCubit({required this.homeRepo}) : super(SmilarBooksInitial());
+  SimilarBooksCubit(this.homeRepo) : super(SmilarBooksInitial());
 
   final HomeRepo homeRepo;
 
